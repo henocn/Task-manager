@@ -4,12 +4,12 @@ Une API REST complète pour gérer vos tâches quotidiennes, développée avec D
 
 ## Fonctionnalités
 
-- ✅ Gestion complète des tâches (création, lecture, mise à jour, suppression)
-- 🔒 Authentification sécurisée avec JWT
-- 📋 Catégorisation des tâches
-- 🔍 Recherche et filtrage avancés
-- 📊 Statistiques sur les tâches
-- 📱 API RESTful compatible avec tout type de client (web, mobile, desktop)
+- Gestion complète des tâches (création, lecture, mise à jour, suppression)
+- Authentification sécurisée avec JWT
+- Catégorisation des tâches
+- Recherche et filtrage avancés
+- Statistiques sur les tâches
+- API RESTful compatible avec tout type de client (web, mobile, desktop)
 
 ## Prérequis
 
