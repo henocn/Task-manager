@@ -29,18 +29,17 @@ router.register(r'categories', CategoryViewSet)
 router.register(r'mes-taches', UserTasksView, basename='mes-taches')
 
 urlpatterns = [
-    # Administration Django
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
     
     # Documentation API
-    path('documentation/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
+    path('documentation/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     
     # Authentification JWT
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('token/verify/', TokenVerifyView.as_view(), name='token_verify'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     
     path('auth/', include('rest_framework.urls', namespace='rest_framework')),
 ]
